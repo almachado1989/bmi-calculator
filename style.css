@@ -1,0 +1,97 @@
+:root {
+    --bg-1: url(images/blobby-bg.svg);
+    --bg-2: url(images/blobby-bg-reversed.svg);
+
+    --yellow: #ffef18;
+    --pink: #ff6ef0;
+    --dark-pink: hsl(306, 100%, 24%);
+    
+    --ff-body: 'Varela Round', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button, form, input {
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-body);
+    color: var(--dark-pink);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.form {
+    border-radius: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 650px;
+    height: 50%;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.height, .weight {
+    display: inline-block;
+    width: 90px
+}
+
+.input {
+    width: 150px;
+    border: none;
+    border-radius: 99vh;
+    padding-inline: 1rem;
+    margin-inline: 1rem;
+}
+
+.input:focus-visible, .input:focus {
+    outline: none;
+}
+
+.unit-selector {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+
+.button {
+    padding: 1rem 3rem;
+    background-color: var(--yellow);
+    color: var(--dark-pink);
+    border: none;
+    border-radius: 99vh;
+    margin-block: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--pink);
+}
+
+.result {
+    align-self: flex-start;
+    margin-left: 33%;
+}

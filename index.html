@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body id="body">
+
+    <div class="wrapper" style="background-image: var(--bg-1);">
+        
+        <form class="form" id="bmiCalculator" action="">
+            
+            <h1 class="main-title">Check Your BMI</h1>
+
+            <div class="form-item">
+
+                <label for="height" class="height"">Height</label>
+                <input class="input" type="number" name="height" id="height" >
+
+                <div class="unit-selector">
+                    <label for="cm">cm</label>
+                    <input type="radio" name="unit-height" id="cm" value="cm" checked>
+                </div>
+                <div class="unit-selector">
+                    <label for="in">in</label>
+                    <input type="radio" name="unit-height" id="in" value="in">
+                </div>
+
+            </div>
+
+            <div class="form-item">
+
+                <label for="weight" class="weight">Weight</label>
+                <input class="input" type="number" name="weight" id="weight" >
+
+
+                <div class="unit-selector">
+                    <label for="kg">kg</label>
+                    <input type="radio" name="unit-weight" id="kg" value="kg" checked>
+                </div>
+                <div class="unit-selector">
+                    <label for="lb">lb</label>
+                    <input type="radio" name="unit-weight" id="lb" value="lb">
+                </div>
+
+            </div>
+            <button type="button" class="button" onclick="calculateBMI()">Calculate</button>
+            <p class="result">Your BMI is <span id="BMIresult"></span></p>
+
+        </form>
+        
+    </div>
+
+
+</body>
+</html>
